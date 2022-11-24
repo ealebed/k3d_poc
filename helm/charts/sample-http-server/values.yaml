@@ -1,0 +1,9 @@
+# general app values
+team: CoE
+app:
+  image: sample-http-server:local
+  env:
+    AUDIENCE: k3d-demo
+  domain: sample.k3d.localhost
+  port: 8080
+  srcFrom: /src

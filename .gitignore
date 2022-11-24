@@ -1,0 +1,18 @@
+### Gradle ###
+.gradle
+build
+!gradle/wrapper/gradle-wrapper.jar
+
+### VSC
+.vscode
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+**/out/
+**/*.run.xml
+
+### Other
+.DS_Store

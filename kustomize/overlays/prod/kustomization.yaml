@@ -1,0 +1,10 @@
+namePrefix: prod-
+commonLabels:
+  stage: prod
+namespace: prod
+resources:
+- ../../base
+patches:
+- replica_count.yaml
+- resources.yaml
+- domain.yaml

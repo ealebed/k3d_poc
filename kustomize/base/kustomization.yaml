@@ -1,0 +1,8 @@
+commonLabels:
+  team: CoE
+  app: sample-http-server
+namespace: default
+resources:
+- deployment.yaml
+- service.yaml
+- ingress.yaml

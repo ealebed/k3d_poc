@@ -1,0 +1,10 @@
+namePrefix: test-
+commonLabels:
+  stage: test
+namespace: test
+resources:
+- ../../base
+patches:
+- replica_count.yaml
+- resources.yaml
+- domain.yaml

@@ -1,0 +1,21 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: sample-http-server-web
+  labels:
+    component: web
+spec:
+  rules:
+  - host: sample.k3d.localhost
+    http:
+      paths:
+      - path: /
+        pathType: ImplementationSpecific
+        backend:
+          service:
+            name: sample-http-server-web
+            port:
+              number: 8080
+  tls:
+  - hosts:
+    - sample.k3d.localhost
